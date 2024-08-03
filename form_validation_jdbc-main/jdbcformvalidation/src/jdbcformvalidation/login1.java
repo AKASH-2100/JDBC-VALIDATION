@@ -17,7 +17,7 @@ public class login1 {
 	}
 	void validate() throws SQLException, ClassNotFoundException {
 		Connection con = dbconnection.dbconnections();
-		String query = "select * from datass";
+		String query = "select * from login";
 		Statement st = con.createStatement();
 		ResultSet rs = st.executeQuery(query);
 		int count =0;
